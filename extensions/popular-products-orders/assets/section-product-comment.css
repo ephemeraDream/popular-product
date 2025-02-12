@@ -1,0 +1,172 @@
+.product-comment {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.product-comment .product-comment-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2.8rem;
+  border-bottom: 0.1rem solid #707070;
+  font-family: Poppins;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #3d3d3d;
+}
+
+.product-comment .product-comment-btn {
+  width: 19.3rem;
+  height: 5rem;
+  border-radius: 25.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #ebb069;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #ffffff;
+}
+
+.product-comment .comments-item .flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-comment .comments-item .flex-center .flex-center {
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  font-family: Blinker;
+  font-size: 3.2rem;
+  font-weight: normal;
+  line-height: normal;
+  text-transform: capitalize;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  font-feature-settings: "kern" on;
+  color: #3d3d3d;
+}
+
+.product-comment .comments-item .flex-center .flex-center .logo-head {
+  width: 18.7rem;
+  height: 12.2rem;
+  margin-left: -3rem;
+}
+
+.product-comment .comments-item .flex-center .comment-images {
+  gap: 2.4rem;
+}
+
+.product-comment .comments-item .flex-center .comment-images img {
+  width: 15.8rem;
+  height: 15.8rem;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.product-comment .comments-item {
+  margin-top: 3.2rem;
+}
+
+.product-comment #comments-list {
+  padding-bottom: 3.2rem;
+  border-bottom: 0.1rem solid #707070;
+}
+
+.product-comment #comments-list .comment-content {
+  margin-top: 0.8rem;
+  font-family: Blinker;
+  font-size: 2.3rem;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 0px;
+  font-variation-settings: "opsz" auto;
+  color: #333333;
+}
+
+.product-comment .comments-pagination {
+  margin-top: 3.2rem;
+}
+
+.product-comment .comments-pagination,
+.product-comment .comments-pagination #page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.product-comment .comments-pagination #page-numbers {
+  font-family: Poppins;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0em;
+  font-variation-settings: "opsz" auto;
+  color: #000000;
+  cursor: pointer;
+}
+
+.product-comment .comments-pagination #page-numbers .active {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: #ebb069;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.product-comment
+  .comments-pagination
+  #page-numbers
+  .page-number-btn:not(.active):hover {
+  color: #ebb069;
+}
+
+.product-comment .comments-pagination #prev-page,
+.product-comment .comments-pagination #next-page {
+  cursor: pointer;
+}
+
+.product-comment .comments-pagination #prev-page:hover svg path,
+.product-comment .comments-pagination #next-page:hover svg path {
+  fill: #ebb069;
+}
+
+@media screen and (max-width: 1024px) {
+  .product-comment .comments-item .flex-center {
+    flex-wrap: wrap;
+    gap: 2.4rem;
+  }
+  .product-comment .comments-item .flex-center .comment-images {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .product-comment #comments-list .comment-content {
+    margin-top: 2.4rem;
+  }
+  .product-comment .comments-pagination {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-comment {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
