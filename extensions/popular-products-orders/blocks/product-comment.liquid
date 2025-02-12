@@ -19,21 +19,44 @@
       <div id="next-page">{{- 'arrow-right.svg' | inline_asset_content -}}</div>
     </div>
   </div>
+  <div id="comments-modal">
+    <div class="comments-modal-content">
+      <div class="comments-modal-header">
+        <span>comment</span>
+        <img src="{{- 'icon-close.png' | asset_img_url: '36x' -}}" width="36" height="36">
+      </div>
+      <form id="comment-form">
+        <div class="flex-center">
+          <div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" required>
+          </div>
+          <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" required>
+          </div>
+        </div>
+
+        <div>
+          <label for="comment">Comment</label>
+          <textarea id="comment" name="comment" required rows="20"></textarea>
+        </div>
+
+        <div>
+          <label for="image">Upload Image</label>
+          <input type="file" id="image" name="images" accept="image/*">
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </div>
 
 {% schema %}
-  {
-    "name": "product comment",
-    "tag": "section",
-    "class": "section",
-    "disabled_on": {
-      "groups": ["header", "footer"]
-    },
-    "settings": [],
-    "presets": [
-      {
-        "name": "product comment"
-      }
-    ]
-  }
-  {% endschema %}
+{
+  "name": "product-comment-ext",
+  "target": "section",
+  "settings": []
+}
+{% endschema %}
