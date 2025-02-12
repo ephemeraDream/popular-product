@@ -7,9 +7,9 @@ name = "comment-app"
 handle = "comment-app-10"
 
 [build]
-include_config_on_deploy = true
-dev_store_url = "xinqidianzi.myshopify.com"
 automatically_update_urls_on_dev = true
+dev_store_url = "xinqidianzi.myshopify.com"
+include_config_on_deploy = true
 
 [webhooks]
 api_version = "2025-01"
@@ -24,6 +24,11 @@ redirect_urls = [
   "https://c752-60-176-176-114.ngrok-free.app/auth/shopify/callback",
   "https://c752-60-176-176-114.ngrok-free.app/api/auth/callback"
 ]
+
+[app_proxy]
+url = "https://c752-60-176-176-114.ngrok-free.app"
+subpath = "comment-app"
+prefix = "apps"
 
 [pos]
 embedded = false
