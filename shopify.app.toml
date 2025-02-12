@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "64606509beb5f37e04e354bec5cb6b32"
+name = "popular-products-orders"
+handle = "popular-products-orders"
+application_url = "https://9d98-240e-391-ea4-bb0-90a7-d29e-f55-224.ngrok-free.app"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "xinqidianzi.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders,read_products,write_orders"
+
+[auth]
+redirect_urls = [
+  "https://9d98-240e-391-ea4-bb0-90a7-d29e-f55-224.ngrok-free.app/auth/callback",
+  "https://9d98-240e-391-ea4-bb0-90a7-d29e-f55-224.ngrok-free.app/auth/shopify/callback",
+  "https://9d98-240e-391-ea4-bb0-90a7-d29e-f55-224.ngrok-free.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
