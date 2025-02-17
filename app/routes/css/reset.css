@@ -1,0 +1,13 @@
+.Polaris-IndexTable__TableCell {
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.Polaris-IndexTable__ScrollBarContainer {
+  display: none;
+}
+
+.width-small {
+  width: 120px;
+}

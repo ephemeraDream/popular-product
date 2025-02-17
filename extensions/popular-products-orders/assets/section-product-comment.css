@@ -36,6 +36,7 @@
   letter-spacing: 0em;
   font-variation-settings: "opsz" auto;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .product-comment .comments-item .flex-center {
@@ -129,10 +130,7 @@
   color: #fff;
 }
 
-.product-comment
-  .comments-pagination
-  #page-numbers
-  .page-number-btn:not(.active):hover {
+.product-comment .comments-pagination #page-numbers .page-number-btn:not(.active):hover {
   color: #ebb069;
 }
 
@@ -151,13 +149,16 @@
     flex-wrap: wrap;
     gap: 2.4rem;
   }
+
   .product-comment .comments-item .flex-center .comment-images {
     width: 100%;
     flex-wrap: wrap;
   }
+
   .product-comment #comments-list .comment-content {
     margin-top: 2.4rem;
   }
+
   .product-comment .comments-pagination {
     width: 100%;
     flex-wrap: wrap;
@@ -169,98 +170,4 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-}
-
-.product-comment #comments-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6rem;
-  z-index: 999;
-}
-
-.product-comment #comments-modal .comments-modal-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: Poppins;
-  font-size: 3.2rem;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  color: #3d3d3d;
-  margin-bottom: 4rem;
-}
-
-.product-comment #comments-modal #comment-form label {
-  width: 100%;
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 2.4rem;
-  font-variation-settings: "opsz" auto;
-  color: #333;
-  display: block;
-  margin-bottom: 1.4rem;
-}
-
-.product-comment #comments-modal #comment-form input {
-  height: 6.6rem;
-  line-height: 6.6rem;
-  border: 0.1rem solid #000000;
-  width: 100%;
-}
-
-.product-comment #comments-modal #comment-form textarea {
-  border: 0.1rem solid #000000;
-  border-radius: 0;
-  width: 130rem;
-}
-
-.product-comment #comments-modal #comment-form .flex-center {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-}
-
-.product-comment #comments-modal #comment-form .flex-center div {
-  flex: 1;
-}
-
-.product-comment #comments-modal #comment-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
-}
-
-.product-comment #comments-modal #comment-form > div {
-  width: 100%;
-}
-
-.product-comment #comments-modal #comment-form button {
-  width: 100%;
-  height: 8.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.1rem solid #212721;
-  padding: 0;
-  background-color: #fff;
-  font-family: Poppins;
-  font-size: 2.8rem;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0em;
-  font-variation-settings: "opsz" auto;
-  color: #212721;
-}
-
-.product-comment #comments-modal #comment-form button:hover {
-  background-color: #ebb069;
-  color: #fff;
 }

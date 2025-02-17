@@ -30,3 +30,26 @@ model Session {
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
 }
+
+model Product_Review {
+  id        Int      @id @default(autoincrement())
+  comment   String
+  productId String
+  firstName String?
+  lastName  String?
+  images    String?
+  publish   Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Blog_Review {
+  id        Int      @id @default(autoincrement())
+  comment   String
+  blogId    String
+  name      String?
+  images    String?
+  publish   Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
