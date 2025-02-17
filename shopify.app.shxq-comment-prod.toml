@@ -1,0 +1,20 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a6a259f225d581cd28638f77b3042cb1"
+application_url = "https://example.com/"
+embedded = true
+name = "shxq-comment-prod"
+handle = "shxq-comment-prod"
+
+[webhooks]
+api_version = "2025-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_content,read_orders,read_products,write_content,write_files,write_orders,write_products"
+
+[auth]
+redirect_urls = [ "https://example.com/api/auth" ]
+
+[pos]
+embedded = false
