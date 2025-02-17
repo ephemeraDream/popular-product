@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "a6a259f225d581cd28638f77b3042cb1"
-application_url = "https://example.com/"
+application_url = "https://shxq-comment-prod-0ebe99aa57bd.herokuapp.com/"
 embedded = true
 name = "shxq-comment-prod"
 handle = "shxq-comment-prod"
@@ -14,7 +14,19 @@ api_version = "2025-01"
 scopes = "read_content,read_orders,read_products,write_content,write_files,write_orders,write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://shxq-comment-prod-0ebe99aa57bd.herokuapp.com/auth/callback",
+  "https://shxq-comment-prod-0ebe99aa57bd.herokuapp.com/auth/shopify/callback",
+  "https://shxq-comment-prod-0ebe99aa57bd.herokuapp.com/api/auth"
+]
+
+[app_proxy]
+url = "https://shxq-comment-prod-0ebe99aa57bd.herokuapp.com"
+subpath = "comment-app"
+prefix = "apps"
 
 [pos]
 embedded = false
+
+[build]
+include_config_on_deploy = true
