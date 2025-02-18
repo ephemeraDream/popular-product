@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "01c0c9f19c37d9693c772c9246c6a9a1"
-application_url = "https://c752-60-176-176-114.ngrok-free.app"
+application_url = "https://8772-2403-fbc0-1000-00-1087.ngrok-free.app"
 embedded = true
 name = "comment-app"
 handle = "comment-app-10"
@@ -20,13 +20,13 @@ scopes = "read_content,read_orders,read_products,write_content,write_files,write
 
 [auth]
 redirect_urls = [
-  "https://c752-60-176-176-114.ngrok-free.app/auth/callback",
-  "https://c752-60-176-176-114.ngrok-free.app/auth/shopify/callback",
-  "https://c752-60-176-176-114.ngrok-free.app/api/auth/callback"
+  "https://8772-2403-fbc0-1000-00-1087.ngrok-free.app/auth/callback",
+  "https://8772-2403-fbc0-1000-00-1087.ngrok-free.app/auth/shopify/callback",
+  "https://8772-2403-fbc0-1000-00-1087.ngrok-free.app/api/auth/callback"
 ]
 
 [app_proxy]
-url = "https://c752-60-176-176-114.ngrok-free.app"
+url = "https://8772-2403-fbc0-1000-00-1087.ngrok-free.app"
 subpath = "comment-app"
 prefix = "apps"
 
